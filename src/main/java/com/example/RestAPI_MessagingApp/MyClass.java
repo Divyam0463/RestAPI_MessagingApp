@@ -19,4 +19,9 @@ class MyClass{
         return "Hello "+name ;
     }
 
+    @PutMapping("/hello/put/{firstname}")
+    public String updateEntry(@PathVariable String firstname, @RequestParam String lastname){
+        return "Hello "+ firstname+" "+lastname ;
+    }
+
 }
